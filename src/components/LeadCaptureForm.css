@@ -1,0 +1,103 @@
+
+.lead-capture {
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  color: #fff;
+}
+
+.lead-capture-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.lead-capture-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.lead-capture-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.lead-capture-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lead-capture-text ul li {
+  color: #FFC107;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.lead-capture-form-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+}
+
+.lead-capture-form h3 {
+  color: #FFC107;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.lead-capture-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.lead-capture-form input,
+.lead-capture-form select {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #000000;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.lead-capture-form input::placeholder {
+  color: #ccc;
+}
+
+.lead-capture-form input:focus,
+.lead-capture-form select:focus {
+  outline: none;
+  border-color: #FFC107;
+}
+
+.lead-capture-form select option {
+  background: #333;
+  color: #fff;
+}
+
+.lead-capture-form .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .lead-capture-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .lead-capture-text h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .lead-capture-text {
+    text-align: center;
+  }
+}
