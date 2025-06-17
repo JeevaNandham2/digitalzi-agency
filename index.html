@@ -4,46 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Digitalzi | Digital Marketing Agency in Chennai</title>
-<meta name="description" content="Digitalzi is a top digital marketing agency in Chennai. SEO, branding, web design and growth solutions for modern businesses." />
+    <title>Digitalzi | Digital Marketing Agency in Chennai</title>
+    <meta name="description" content="Digitalzi is a top digital marketing agency in Chennai. SEO, branding, web design and growth solutions for modern businesses." />
     <meta name="author" content="Digitalzi Agency" />
     <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="application-name" content="Digitalzi" />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content="Digitalzi" />
     <meta property="og:description" content="Transform your digital presence with our cutting-edge marketing solutions" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://digitalzi.in" />
-    <meta property="og:image" content="/images/og-preview.jpg" />
+    <meta property="og:image" content="https://digitalzi.in/favicon.png" />
+    <meta property="og:site_name" content="Digitalzi" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Digitalzi" />
     <meta name="twitter:title" content="Digitalzi" />
     <meta name="twitter:description" content="Transform your digital presence with our cutting-edge marketing solutions" />
-    <meta name="twitter:image" content="/images/og-preview.jpg" />
+    <meta name="twitter:image" content="https://digitalzi.in/images/og-preview.jpg" />
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
 
-   <script>
-  if (location.hostname === "www.digitalzi.in") {
-    location.replace("https://digitalzi.in" + location.pathname);
-  }
-</script>
+    <!-- Redirect www.digitalzi.in to digitalzi.in -->
+    <script>
+      if (location.hostname === "www.digitalzi.in") {
+        location.replace("https://digitalzi.in" + location.pathname + location.search);
+      }
+    </script>
 
-    <!-- Structured Data for LocalBusiness -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-    
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Digitalzi",
+      "alternateName": "Digitalzi Agency",
+      "url": "https://digitalzi.in",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://digitalzi.in/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Optional: LocalBusiness if you're a local agency -->
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -51,7 +65,7 @@
       "image": "https://digitalzi.in/favicon.png",
       "url": "https://digitalzi.in",
       "telephone": "+91-9640709670",
-      "email": "digitalzi2318.com",
+      "email": "digitalzi2318@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "No 135, Thabal Street",
@@ -79,10 +93,7 @@
   <body>
     <div id="root"></div>
 
-    <!-- GPT script (optional, if you're using it) -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-
-    <!-- Vite app entry -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

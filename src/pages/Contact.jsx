@@ -36,11 +36,8 @@ Message: ${message}
 
     const encodedMessage = encodeURIComponent(text.trim());
     const whatsappUrl = `https://wa.me/919640709670?text=${encodedMessage}`;
-    
-    // Open WhatsApp chat
-    window.open(whatsappUrl, '_blank');
 
-    // Optional alert
+    window.open(whatsappUrl, '_blank');
     alert('Redirecting to WhatsApp to send your message!');
   };
 
@@ -55,23 +52,12 @@ Message: ${message}
                 Ready to transform your business? Get in touch for a free consultation and custom strategy.
               </p>
               <div className="hero-features">
-                <div className="feature-item">
-                  <span className="feature-icon">⚡</span>
-                  <span>Free 30-min consultation</span>
-                </div>
-                <div className="feature-item">
-                  <span className="feature-icon">📊</span>
-                  <span>Custom strategy roadmap</span>
-                </div>
-                <div className="feature-item">
-                  <span className="feature-icon">🎯</span>
-                  <span>ROI-focused approach</span>
-                </div>
+                <div className="feature-item">⚡ Free 30-min consultation</div>
+                <div className="feature-item">📊 Custom strategy roadmap</div>
+                <div className="feature-item">🎯 ROI-focused approach</div>
               </div>
             </div>
-            <div className="hero-image">
-              {/* <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=600" alt="Contact us" /> */}
-            </div>
+            <div className="hero-image">{/* Optional image */}</div>
           </div>
         </div>
       </section>
@@ -89,14 +75,14 @@ Message: ${message}
                   <div className="method-content">
                     <h3>Call Us</h3>
                     <p>+91 9640709670</p>
-                    <span>Mon-Fri 9AM-6PM IST</span>
+                    <span>Mon–Fri, 9AM–6PM IST</span>
                   </div>
                 </div>
 
                 <div className="contact-method">
                   <div className="method-icon">📧</div>
                   <div className="method-content">
-                    <h3>Email Us</h3>
+                    <h3>Email</h3>
                     <p>digitalzi2318@gmail.com</p>
                     <span>We respond within 2 hours</span>
                   </div>
@@ -106,8 +92,15 @@ Message: ${message}
                   <div className="method-icon">💬</div>
                   <div className="method-content">
                     <h3>WhatsApp</h3>
-                    <p>Chat with our experts</p>
-                    <span>Available 24/7</span>
+                    <p>Chat with our experts 24/7</p>
+                    <a
+                      href="https://wa.me/919640709670"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: '#25D366', fontWeight: 'bold' }}
+                    >
+                      Click to Chat on WhatsApp
+                    </a>
                   </div>
                 </div>
               </div>
@@ -130,7 +123,7 @@ Message: ${message}
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      placeholder="Enter your name "
+                      placeholder="Enter your name"
                     />
                   </div>
 
@@ -143,7 +136,7 @@ Message: ${message}
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="Enter your Email"
+                      placeholder="Enter your email"
                     />
                   </div>
                 </div>
@@ -175,25 +168,9 @@ Message: ${message}
                       <option value="social">Social Media Marketing</option>
                       <option value="web-design">Web Design</option>
                       <option value="local-seo">Local SEO</option>
-                      <option value="orm">Online Reputation Management</option>
+                      <option value="orm">Reputation Management</option>
                     </select>
                   </div>
-                </div>
-
-                <div className="form-group">
-                  {/* <label htmlFor="budget">Monthly Budget Range</label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleChange}
-                  >
-                    <option value="">Select budget range</option>
-                    <option value="1000-5000">$1,000 - $5,000</option>
-                    <option value="5000-10000">$5,000 - $10,000</option>
-                    <option value="10000-25000">$10,000 - $25,000</option>
-                    <option value="25000+">$25,000+</option>
-                  </select> */}
                 </div>
 
                 <div className="form-group">
@@ -210,8 +187,7 @@ Message: ${message}
                 </div>
 
                 <button type="submit" className="btn btn-primary">
-                  Send Message
-                  <span className="btn-arrow">→</span>
+                  Send Message <span className="btn-arrow">→</span>
                 </button>
               </form>
             </div>
